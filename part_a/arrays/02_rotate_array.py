@@ -11,11 +11,11 @@ class Solution(object):
                 l += 1
                 r -= 1
         
-        k = k % len(nums)
+        k = k % len(nums)                       # NORMALIZE
         l, r = 0, len(nums) -1
-        do_rotate(l,r)
-        do_rotate(l, k-1)
-        do_rotate(k, r)
+        do_rotate(l, r)                         # FULL Rotate
+        do_rotate(l, k-1)                           # PART-A  Rotate
+        do_rotate(k, r)                             # PART-B  Rotate
         return nums
 
 s = Solution()

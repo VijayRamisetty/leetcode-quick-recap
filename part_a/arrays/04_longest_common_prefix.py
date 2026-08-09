@@ -1,11 +1,11 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):
 
-        prefix = strs[0]
+        prefix = strs[0]                      # Consider the 1st guy itself as prefix
         for s in strs:
             if prefix == '':
                 return ''
-            while not s.startswith(prefix):
+            while not s.startswith(prefix):                 # remember : not s.startswith(prefix)
                 prefix = prefix[:-1]
         return prefix
 
