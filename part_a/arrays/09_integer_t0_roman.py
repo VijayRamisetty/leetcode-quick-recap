@@ -20,7 +20,7 @@ class Solution:
         for val, code in int_to_roman_list:
             if num == 0:
                 break
-            factor, num = divmod(num, val )      # remeber ; [ factor , num = divmod(num, val) ]
+            factor, num = divmod(num, val )      # remember ; [ factor , num = divmod(num, val) ]
             res.append(factor * code)
         
         return ''.join(res)
