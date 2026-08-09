@@ -8,7 +8,7 @@ class Solution:
         #-- process
         total = 0
         for i in range(len(s)):
-            # -- current char less then next minus(-) else plus(+) to total ; ex: IV = -1 + 5 = 4
+            # -- current char less then next ; minus(-) else plus(+) to total ; ex: IV = -1 + 5 = 4
             if i!=len(s)-1 and roman_to_int[s[i]] < roman_to_int[s[i+1]]:  
                 total -= roman_to_int[s[i]]
             else:
