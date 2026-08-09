@@ -13,5 +13,3 @@ sol = Solution()
 assert (result:=sol.lengthOfLastWord("Hello World")) == 5,  f'Failed, received:{result}'
 assert (result:=sol.lengthOfLastWord("   fly me   to   the moon  ")) == 4,  f'Failed, received:{result}'
 assert (result:=sol.lengthOfLastWord("luffy is still joyboy")) == 6,  f'Failed, received:{result}'
-
-        
