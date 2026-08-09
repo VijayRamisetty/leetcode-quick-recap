@@ -1,6 +1,5 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):
-
         prefix = strs[0]                      # Consider the 1st guy itself as prefix
         for s in strs:
             if prefix == '':
