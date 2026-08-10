@@ -13,6 +13,7 @@ class Solution:
                 l+=1
             else:
                 r-=1
+
         return max_area
 
 sol = Solution()
